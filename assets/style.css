@@ -145,8 +145,8 @@ button:hover {
     }
 }
 
-@media (max-height: 400px) {
+@media (max-height: 500px) {
     form {
-        height: 400px;
+        height: 500px;
     }
 }
