@@ -1,0 +1,140 @@
+@font-face {
+    font-family: Oswald-Bold;
+    src: url(../fonts/Oswald-Bold.ttf);
+}
+
+body {
+    margin: 0;
+    background-image: url(gold.jpg);
+    background-size: 100vw 100vh;
+    background-attachment: fixed;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    text-align: center;
+    
+}
+
+form {
+    width: 500px;
+    margin: auto;
+    background-color:rgba(240, 230, 140, 0.902);
+    padding: 15px;
+    border-radius: 7px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2vh;
+    /* box-sizing: border-box; */
+}
+
+input, select, fieldset, textarea {
+    padding: 6px;
+    margin-bottom: 5px;
+    outline-color: #B7950B;
+
+}
+
+legend {
+    text-align: center;
+}
+
+#fieldset {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; 
+    /* border: solid; */
+    height: 15vh;
+    margin: 8px 0;
+}
+
+#fieldset input {
+    display: none;
+}
+
+#fieldset .subscription-box {
+    width: 90%;
+    height: 100%;
+    border-radius: 5px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    font-family: Oswald-Bold;
+
+}
+
+#fieldset .free {
+    background-color: white;
+}
+
+#fieldset .platinum {
+    background-color: rgb(192, 192, 192);
+}
+
+#fieldset .gold {
+    background-color: #B7950B;
+}
+
+#fieldset label:hover {
+    transform: translate(5px, -5px);
+    transition: all ease 200ms;
+    box-shadow: -5px 10px 20px rgba(0,0,0,0.19), -5px 6px 6px rgba(0,0,0,0.23);
+}
+
+
+#fieldset input[type=radio]:checked + label {
+    background-color: #7D6608;
+    color: white;
+    transition: all 200ms ease;
+}
+
+.checkbox label {
+    font-family: italic;
+}
+
+a {
+    color: blue;
+}
+
+a:hover {
+    color: #4D0099;
+}
+
+textarea {
+    margin-top: 5px;
+    min-width: 100%;
+    max-width: 100%;
+    min-height: 75px;
+    max-height: 250px;
+    box-sizing: border-box;
+}
+
+button {
+    padding: 6px;
+    width: 100%;
+    margin: auto;
+    background-color: #B7950B;
+    outline: none;
+    border: none;
+    color: aliceblue;
+    font-family: Verdana, sans-serif;
+    font-weight: 540;
+}
+
+button:hover {
+    background-color: white;
+    color: #7D6608;
+    box-shadow: 0 0 0 1.5px inset #7D6608;
+    transition: all 500ms ease;
+}
+
+.checkbox {
+    display: inline-block;
+}
+
+@media (max-width: 600px) {
+    form {
+        width: 100%;
+    }
+}
