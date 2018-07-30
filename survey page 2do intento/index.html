@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Form page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="./assets/style.css" />
+    <script src="main.js"></script>
+</head>
+<body>
+    <header>
+        <h1 id="tittle">Register</h1>
+        <p>Fill in the blanks</p>
+    </header>
+    <form action="register">
+        <!--                          Name                               -->
+        <label for="name" id="name-label">Name</label>
+        <input type="text" name="name" id="name" placeholder="Name" required>
+        <!--                          Email                              -->
+        <label for="email" id="email-label">Email</label>
+        <input type="email" name="email" id="email" placeholder="Email" required>
+        <!--                           Age                               -->
+        <label for="number" id="number-label">Year you was born</label>
+        <input type="number" min="1900" max="2018" id="number" placeholder="Year" required>
+        <!--                           Gender                               -->
+        <label for="dropdown">Gender</label>
+        <select name="Gender" id="dropdown" required>
+            <option value=""  disabled selected hidden>Choose your gender</option>
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+        </select>
+        <!--                         Subscription                            -->
+        <legend>Subscription</legend>
+        <div id="fieldset">
+            <!--         free           -->
+            <input type="radio" name="subscription" id="free" value="free">
+            <label for="free" class="free subscription-box">0$<br/>Free Subscription</label>
+            <!--         platinum       -->
+            <input type="radio" name="subscription" id="platinum" value="platinum">
+            <label for="platinum" class="platinum subscription-box">9$/Monthly<br/>Platinum Subscription</label>
+            <!--        gold            -->
+            <input type="radio" name="subscription" id="gold" value="gold">
+            <label for="gold" class="gold subscription-box">20$/Monthly<br/>Gold Subscription</label>
+        </div>
+        <!--                          Checkbox                               -->
+        <!--         terms           -->
+        <div class="checkbox">        
+            <input type="checkbox" id="terms" value="2" required checked>
+            <label for="terms">I accept the <a href="">terms and conditions.</a></label>
+        </div>
+        <!--      send-email-news    --> 
+        <div class="checkbox">
+            <input type="checkbox" id="send-email-news" value="1">
+            <label for="send-email-news">I want to recieve emails for upcoming news.</label>
+        </div>
+        <!--                       Additional comments                         -->
+        <textarea name="additionalComments" id="comments" placeholder="Suggestions"></textarea>
+        <!--                         Button                                    -->
+        <button id="register">Register</button>
+        
+    </form>
+    
+</body>
+</html>
