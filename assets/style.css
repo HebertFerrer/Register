@@ -138,3 +138,15 @@ button:hover {
         width: 100%;
     }
 }
+
+@media (max-width: 400px) {
+    form {
+        width: 400px;
+    }
+}
+
+@media (max-height: 400px) {
+    form {
+        height: 400px;
+    }
+}
