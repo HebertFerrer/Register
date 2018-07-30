@@ -43,7 +43,7 @@ legend {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr; 
     /* border: solid; */
-    height: 15vh;
+    height: 80px;
     margin: 8px 0;
 }
 
