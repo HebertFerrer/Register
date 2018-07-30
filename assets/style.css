@@ -140,7 +140,7 @@ button:hover {
 }
 
 @media (max-width: 400px) {
-    form {
+    body {
         width: 400px;
     }
 }
